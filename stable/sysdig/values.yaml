@@ -20,6 +20,9 @@ sysdig:
 
     serviceAccountName: "sysdig-account"
 
+secure:
+  enable: false
+
 resources:
   requests:
     cpu: 100m

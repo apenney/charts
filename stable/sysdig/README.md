@@ -41,6 +41,7 @@ The following tables lists the configurable parameters of the Sysdig chart and t
 |-----------------------------|------------------------------------|-------------------------------------------|
 | `sysdig.AccessKey`          | Your Sysdig Monitor Access Key       | `Nil` You must provide your own key       |
 | `sysdig.AgentTags`          | String with tags for the agent     |  Empty                                    |
+| `secure.enable`             | Boolean for enabling sysdig secure |  `false`                                  |
 | `image.repository`          | The image repository to pull from  | `sysdig/agent`                            |
 | `image.tag`                 | The image tag to pull              | `latest`                                  |
 | `image.pullPolicy`          | The Image pull policy              | `Always`                                  |
