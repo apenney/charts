@@ -32,3 +32,6 @@ resources:
 tolerations:
   - effect: NoSchedule
     key: node-role.kubernetes.io/master
+# Don't reschedule these pods!
+  - key: "CriticalAddonsOnly"
+    operator: "Exists"
