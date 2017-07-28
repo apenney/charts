@@ -56,10 +56,10 @@ spec:
         securityContext:
          privileged: true
         env:
-          {{ - if .Values.secure.enable }}
+          {{- if .Values.secure.enable }}
           - name: ADDITIONAL_CONF
             value: "security: {enabled: true}\ncommandlines_capture: {enabled: true}\nmemdump: {enabled: true}"
-          {{ endif }}
+          {{ end }}
           - name: ACCESS_KEY
             valueFrom:
               secretKeyRef:
