@@ -58,7 +58,7 @@ spec:
         env:
           {{- if .Values.secure.enable }}
           - name: ADDITIONAL_CONF
-            value: "security: {enabled: true}\ncommandlines_capture: {enabled: true}\nmemdump: {enabled: true}"
+            value: "log:\n  console_priority: error\nsecurity: {enabled: true}\ncommandlines_capture: {enabled: true}\nmemdump: {enabled: true}"
           {{ end }}
           - name: ACCESS_KEY
             valueFrom:
